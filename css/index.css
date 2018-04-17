@@ -1,0 +1,273 @@
+/*main 模块开始*/
+.jd{
+    height: 480px;
+    /*background-color: palegoldenrod;*/
+    position: relative;
+}
+.jd-inner{
+    height: 480px;
+    /*background-color: cornflowerblue;*/
+    position: relative;
+    z-index: 1;
+    margin-top: 1px;
+}
+.ad{
+    height: 480px;
+    background: url("../images/ad.png") no-repeat top center;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;/*一定要写 position 会转换为行内块 根据内容定宽度*/
+}
+.ad a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.jd-inner .col1{
+    width: 192px;
+    height: 465px;
+    background-color:#fefefe;
+    float: left;
+    padding-top: 15px;
+}
+.jd-inner .col1 li{
+    padding-left: 15px;
+    line-height: 28px;
+    height: 28px;
+}
+.jd-inner .col1 li:hover{
+    background-color: #dddbcd;
+}
+.jd-inner .col1 a{
+    color: #5D5D5D;
+    font-size: 14px;
+}
+.jd-inner .col1 a:hover{
+    color: #f10215;
+    font-size: 14px;
+}
+.jd-inner span{
+    font-size: 12px;
+    color: #5D5D5D;
+}
+.jd-inner .col2{
+    width: 790px;
+    height: 480px;
+    /*background-color: #5D5D5D;*/
+    float: left;
+    margin-left: 10px;
+}
+.jd-inner .jd-col2-left{
+    float: left;
+    padding-top: 10px;
+    position: relative;
+}
+.col2 .arr_l, .arr_r{
+    font-family: "icomoon";
+    font-style: normal;
+    color:#f5f3f3;
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    top:50%;
+    margin-top: -25px;
+    line-height: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+}
+.arr_l{
+    left: 0;
+}
+.arr_r{
+    right: 0px;
+}
+.col2 .arr_l:hover, .arr_r:hover{
+    background-color: #6e726e;
+}
+.jd-col2-left ol{
+    width: 170px;
+    height: 20px;
+    position: absolute;
+    bottom: 18px;
+    left: 70px;
+}
+.jd-col2-left ol li{
+    width: 10px;
+    height:10px;
+    border: 2px solid #ffffff;
+    box-shadow:-1px -1px 15px rgba(255,255,255,.5);
+    border-radius:50%;
+    margin:5px;
+    float: left;
+    cursor: pointer;
+}
+.jd-col2-left .current, .jd-col2-left ol li:hover{
+    background-color: #ffffff;
+    border: 2px solid rgba(255,255,255,.5);
+    box-shadow:-1px -1px 15px rgba(255,255,255,.5);
+}
+.jd-col2-left ul{
+    /*transform:translateX(-10%);*/
+}
+.jd-col2-left ul li{
+    display: none;
+}
+.jd-col2-left ul li:first-child{
+    display: block;
+}
+.jd-inner .jd-col2-right{
+    float: right;
+}
+.jd-col2-right ul{
+    margin-top: 10px;
+}
+.jd-inner .jd-col2-right li{
+    margin-top: 7.2px;
+}
+.jd-inner .col3{
+    width: 190px;
+    height: 470px;
+    background-color: #ffffff;
+    float: right;
+    margin-top: 10px;
+}
+.col3 .user{
+    height: 95px;
+    padding: 10px 12px 0;
+}
+.user-info{
+    height: 40px;
+    padding-left: 54px;
+    font-size: 14px;
+    color: #747474;
+    line-height: 22px;
+    position: relative;
+}
+.user-info .info-img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.user-info a{
+    font-size: 14px;
+    color: #747474;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.user-info a:hover{
+   color: #f10215;
+}
+.user-info .info-img img{
+    width: 100%;
+    height: auto;
+}
+.user-profit{
+    margin-top: 14px;
+}
+.user-profit a{
+    width:80px;
+    height:30px;
+    display: inline-block;
+    font-size: 12px;
+    color: #f10215;
+    text-align: center;
+    line-height: 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px #ccc;
+}
+.user-profit .black{
+    background-color: #333333;
+    color: #e5d790;
+}
+.user-profit a:hover{
+    color: #fff;
+    background-color: #f10215;
+    border: 0;
+}
+.col3 .news{
+    height: 154px;
+    padding: 5px 15px 0;
+    border-bottom: 1px solid #cccccc;
+    margin: 0 6px;
+}
+.tab-hd{
+    border-bottom: 1px solid #cccccc;
+    margin-top: 10px;
+    padding: 3px 0;
+    position: relative;
+}
+.tab-hd a{
+    font-size: 12px;
+    color: #747474;
+    margin: 0 4px;
+}
+.cuxiao{
+    border-right:1px solid #cccccc ;
+    padding-right:10px;
+}
+.news .more1{
+    position: absolute;
+    top:6px;
+    right: 0;
+}
+.line{
+    width: 28px;
+    height: 2px;
+   background-color: #f10215;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+.tab-bd{
+    margin-top: 10px;
+}
+.tab-bd a{
+    font-size: 12px;
+    color: #747474;
+    line-height: 23px;
+}
+.tab-bd a:hover{
+    color: #f10215;
+}
+.col3 .jd-service{
+    height:209px ;
+    overflow: hidden;
+}
+.jd-service ul{
+    width: 195px;
+    margin-top: 10px;
+}
+.jd-service li{
+    width: 47px;
+    height: 69px;
+    float: left;
+}
+.jd-service li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.jd-service i{
+    font-family: "icomoon";
+    font-style: normal;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    color: #c6c0b5;
+}
+.jd-service p{
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    color:#c6c0b5;
+}
+.jd-service p:hover,.jd-service i:hover{
+    color: #f10215;
+}
