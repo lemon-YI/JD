@@ -4,7 +4,6 @@
 
 $(function () {
     var count = 0;
-
     $('.arr_r').click(function () {
         count++;
 
@@ -34,8 +33,9 @@ $(function () {
         $('.jd-col2-left>ul>li').eq(count).fadeIn(1000).siblings('li').hide();
     });
 
-	setInterval(function(){
-		$('.arr_r').trigger('click');
-	}, 3000);
+
+    setInterval(function () {
+        $('.arr_r').trigger('click');
+    },3000);
 });
 
